@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Barlow Condensed", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-pitch: #0c1210;
+  --color-pitch-light: #131b18;
+  --color-bayern-red: #dc052d;
+  --color-bayern-red-dark: #a4031f;
+  --color-bayern-gold: #ffd700;
+  --color-bayern-gold-dim: #c9a227;
+  --color-text: #e8e6e3;
+  --color-text-dim: #9ca39f;
+  --color-border: #24302b;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-pitch);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+}
